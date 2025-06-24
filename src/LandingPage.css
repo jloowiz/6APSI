@@ -1,43 +1,51 @@
 .landing-container {
+  background: linear-gradient(to bottom, #111, #222);
   height: 100vh;
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #111, #333);
-  color: #fff;
+  justify-content: center;
   font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 600px;
 }
 
 .title {
   font-size: 3rem;
-  margin-bottom: 0.5rem;
   letter-spacing: 2px;
+  margin-bottom: 1rem;
 }
 
-.tagline {
+.description {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  opacity: 0.7;
+  color: #aaa;
 }
 
-.start-btn {
+.sneaker-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  margin-bottom: 2rem;
+}
+
+.get-started {
   padding: 0.75rem 2rem;
-  font-size: 1rem;
   background-color: #e63946;
   border: none;
   border-radius: 25px;
   color: white;
+  font-size: 1rem;
   cursor: pointer;
-  transition: transform 0.3s ease, background-color 0.3s ease;
-}
-
-.start-btn:hover {
-  background-color: #d62828;
-  transform: scale(1.05);
-}
-
-.start-btn.clicked {
-  transform: scale(0.9);
   transition: transform 0.2s ease;
+}
+
+.get-started:hover {
+  transform: scale(1.05);
+  background-color: #d62828;
 }
